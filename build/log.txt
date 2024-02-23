@@ -1,0 +1,67 @@
+[2024-02-24 01:21:27] SET SLEEP VALUE : 10000
+[2024-02-24 01:21:27] SET LOG PATH : .\\logs\\log.txt
+[2024-02-24 01:21:27] JASPER KCSAPI4 INIT ...
+[2024-02-24 01:21:27] [INFO] DLL loaded successfully.
+[2024-02-24 01:21:32] sReturn is equal to comparisonValue
+[2024-02-24 01:21:32] Program is running. Current time: 2024-02-24 01:21:32
+[2024-02-24 01:21:42] Program is running. Current time: 2024-02-24 01:21:42
+[2024-02-24 01:21:52] Program is running. Current time: 2024-02-24 01:21:52
+[2024-02-24 01:22:02] Program is running. Current time: 2024-02-24 01:22:02
+[2024-02-24 01:22:12] Program is running. Current time: 2024-02-24 01:22:12
+[2024-02-24 01:22:22] Program is running. Current time: 2024-02-24 01:22:22
+[2024-02-24 01:22:32] Program is running. Current time: 2024-02-24 01:22:32
+[2024-02-24 01:22:42] Program is running. Current time: 2024-02-24 01:22:42
+[2024-02-24 01:22:52] Program is running. Current time: 2024-02-24 01:22:52
+[2024-02-24 01:23:02] Program is running. Current time: 2024-02-24 01:23:02
+[2024-02-24 01:23:12] Program is running. Current time: 2024-02-24 01:23:12
+[2024-02-24 01:23:22] Program is running. Current time: 2024-02-24 01:23:22
+[2024-02-24 01:23:32] Program is running. Current time: 2024-02-24 01:23:32
+[2024-02-24 01:23:42] Program is running. Current time: 2024-02-24 01:23:42
+[2024-02-24 01:23:52] Program is running. Current time: 2024-02-24 01:23:52
+[2024-02-24 01:24:02] Program is running. Current time: 2024-02-24 01:24:02
+[2024-02-24 01:24:12] Program is running. Current time: 2024-02-24 01:24:12
+[2024-02-24 01:24:22] Program is running. Current time: 2024-02-24 01:24:22
+[2024-02-24 01:24:32] Program is running. Current time: 2024-02-24 01:24:32
+[2024-02-24 01:24:42] Program is running. Current time: 2024-02-24 01:24:42
+[2024-02-24 01:24:52] Program is running. Current time: 2024-02-24 01:24:52
+[2024-02-24 01:25:02] Program is running. Current time: 2024-02-24 01:25:02
+[2024-02-24 01:25:12] Program is running. Current time: 2024-02-24 01:25:12
+[2024-02-24 01:25:22] Program is running. Current time: 2024-02-24 01:25:22
+[2024-02-24 01:25:32] Program is running. Current time: 2024-02-24 01:25:32
+[2024-02-24 01:25:42] Program is running. Current time: 2024-02-24 01:25:42
+[2024-02-24 01:25:52] Program is running. Current time: 2024-02-24 01:25:52
+[2024-02-24 01:26:02] Program is running. Current time: 2024-02-24 01:26:02
+[2024-02-24 01:26:12] Program is running. Current time: 2024-02-24 01:26:12
+[2024-02-24 01:26:22] Program is running. Current time: 2024-02-24 01:26:22
+[2024-02-24 01:26:32] Program is running. Current time: 2024-02-24 01:26:32
+[2024-02-24 01:26:42] Program is running. Current time: 2024-02-24 01:26:42
+[2024-02-24 01:26:52] Program is running. Current time: 2024-02-24 01:26:52
+[2024-02-24 01:27:02] Program is running. Current time: 2024-02-24 01:27:02
+[2024-02-24 01:27:12] Program is running. Current time: 2024-02-24 01:27:12
+[2024-02-24 01:27:22] Program is running. Current time: 2024-02-24 01:27:22
+[2024-02-24 01:27:32] Program is running. Current time: 2024-02-24 01:27:32
+[2024-02-24 01:27:42] Program is running. Current time: 2024-02-24 01:27:42
+[2024-02-24 01:27:52] Program is running. Current time: 2024-02-24 01:27:52
+[2024-02-24 01:28:02] Program is running. Current time: 2024-02-24 01:28:02
+[2024-02-24 01:28:13] Program is running. Current time: 2024-02-24 01:28:13
+[2024-02-24 01:28:23] Program is running. Current time: 2024-02-24 01:28:23
+[2024-02-24 01:28:33] Program is running. Current time: 2024-02-24 01:28:33
+[2024-02-24 01:28:43] Program is running. Current time: 2024-02-24 01:28:43
+[2024-02-24 01:28:53] Program is running. Current time: 2024-02-24 01:28:53
+[2024-02-24 01:29:03] Program is running. Current time: 2024-02-24 01:29:03
+[2024-02-24 01:29:13] Program is running. Current time: 2024-02-24 01:29:13
+[2024-02-24 01:29:23] Program is running. Current time: 2024-02-24 01:29:23
+[2024-02-24 01:29:33] Program is running. Current time: 2024-02-24 01:29:33
+[2024-02-24 01:29:43] Program is running. Current time: 2024-02-24 01:29:43
+[2024-02-24 01:29:53] Program is running. Current time: 2024-02-24 01:29:53
+[2024-02-24 01:30:03] Program is running. Current time: 2024-02-24 01:30:03
+[2024-02-24 01:30:13] Program is running. Current time: 2024-02-24 01:30:13
+[2024-02-24 01:30:23] Program is running. Current time: 2024-02-24 01:30:23
+[2024-02-24 01:30:33] Program is running. Current time: 2024-02-24 01:30:33
+[2024-02-24 01:30:43] Program is running. Current time: 2024-02-24 01:30:43
+[2024-02-24 03:20:20] SET SLEEP VALUE : 25000
+[2024-02-24 03:20:20] SET LOG PATH : .\\logs\\log.txt
+[2024-02-24 03:20:20] JASPER KCSAPI4 INIT ...
+[2024-02-24 03:20:20] [INFO] DLL loaded successfully.
+[2024-02-24 03:20:31] sReturn is equal to comparisonValue
+[2024-02-24 03:20:31] Program is running. Current time: 2024-02-24 03:20:31

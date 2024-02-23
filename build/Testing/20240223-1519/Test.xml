@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-mingw32-make"
+	BuildStamp="20240223-1519-Experimental"
+	Name="HS-DESKTOP"
+	Generator="ctest-3.28.1"
+	CompilerName="C:/JASPER/mingw32/bin/g++.exe"
+	CompilerVersion="11.1.0"
+	OSName="Windows"
+	Hostname="HS-DESKTOP"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22621)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="1"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="42104"
+	TotalPhysicalMemory="31864"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4192"
+	>
+	<Testing>
+		<StartDateTime>Feb 24 03:20 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
+		<StartTestTime>1708712415</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 24 03:20 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
+		<EndTestTime>1708712415</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

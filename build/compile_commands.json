@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/JASPER/workspace/JASPER_WIN_DEMON/build",
+  "command": "C:\\JASPER\\mingw32\\bin\\g++.exe  @CMakeFiles/JASPER.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\JASPER.dir\\src\\main.cpp.obj -c C:\\JASPER\\workspace\\JASPER_WIN_DEMON\\src\\main.cpp",
+  "file": "C:/JASPER/workspace/JASPER_WIN_DEMON/src/main.cpp",
+  "output": "CMakeFiles/JASPER.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/JASPER/workspace/JASPER_WIN_DEMON/build/_deps/pugixml-build",
+  "command": "C:\\JASPER\\mingw32\\bin\\g++.exe  @CMakeFiles/pugixml-static.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\pugixml-static.dir\\src\\pugixml.cpp.obj -c C:\\JASPER\\workspace\\JASPER_WIN_DEMON\\build\\_deps\\pugixml-src\\src\\pugixml.cpp",
+  "file": "C:/JASPER/workspace/JASPER_WIN_DEMON/build/_deps/pugixml-src/src/pugixml.cpp",
+  "output": "_deps/pugixml-build/CMakeFiles/pugixml-static.dir/src/pugixml.cpp.obj"
+}
+]

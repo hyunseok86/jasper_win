@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\JASPER.dir/objects.a
+C:\JASPER\mingw32\bin\ar.exe qc CMakeFiles\JASPER.dir/objects.a @CMakeFiles\JASPER.dir\objects1.rsp
+C:\JASPER\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\JASPER.dir/objects.a -Wl,--no-whole-archive -o JASPER.exe -Wl,--out-implib,libJASPER.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\JASPER.dir\linkLibs.rsp

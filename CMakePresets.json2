@@ -1,0 +1,31 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21,
+        "patch": 1
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "description": "Default build configuration",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "C:/JASPER/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                "CMAKE_GENERATOR_PLATFORM": "win32"
+            }
+        },
+        {
+            "name": "release",
+            "description": "Release build",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/release",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "C:/JASPER/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_GENERATOR_PLATFORM": "win32"
+            }
+        }
+    ]
+}

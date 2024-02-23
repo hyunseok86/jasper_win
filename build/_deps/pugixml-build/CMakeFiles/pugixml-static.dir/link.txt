@@ -1,0 +1,2 @@
+C:\JASPER\mingw32\bin\ar.exe qc libpugixml.a "CMakeFiles/pugixml-static.dir/src/pugixml.cpp.obj"
+C:\JASPER\mingw32\bin\ranlib.exe libpugixml.a
