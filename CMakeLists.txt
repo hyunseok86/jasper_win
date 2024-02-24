@@ -17,7 +17,7 @@ FetchContent_Declare(
     GIT_REPOSITORY https://github.com/zeux/pugixml.git
     GIT_TAG v1.11.4 # 릴리즈 태그 사용 (최신 버전 확인 필요)
 )
-FetchContent_MakeAvailable(pugixml)
+FetchContent_MakeAvailable(pugixml) 
 
 # 헤더 파일 디렉토리 추가
 include_directories(${pugixml_SOURCE_DIR}/src)
