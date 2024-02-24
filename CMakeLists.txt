@@ -7,8 +7,8 @@ enable_testing()
 
 
 # DLL 파일 경로 설정
-set(PostgreSQL_LIB_DIR "C:/JASPER/workspace/JASPER_WIN_DEMON/libs")
-set(KCSAPI4_DLL_PATH "C:/JASPER/workspace/JASPER_WIN_DEMON/libs/KCSAPI4.dll")
+set(LIB_DIR "${PROJECT_SOURCE_DIR}/libs")
+set(KCSAPI4_DLL_PATH "${PROJECT_SOURCE_DIR}/libs/KCSAPI4.dll")
 
 # pugixml 다운로드 및 빌드
 include(FetchContent)
