@@ -139,10 +139,111 @@ void RunProgram() {
     }
 }
 
+void SimulateTabKeyPress() {
+    INPUT input;
+    input.type = INPUT_KEYBOARD;
+    input.ki.wScan = 0;
+    input.ki.time = 0;
+    input.ki.dwExtraInfo = 0;
+
+    // Press Tab key
+    input.ki.wVk = VK_TAB;
+    input.ki.dwFlags = 0; // 0 for key press
+    SendInput(1, &input, sizeof(INPUT));
+
+    // Release Tab key
+    input.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
+    SendInput(1, &input, sizeof(INPUT));
+}
+
+void SendTextInput(const char* text) {
+    INPUT inputs[2];
+    memset(inputs, 0, sizeof(inputs));
+
+    // 키 다운
+    inputs[0].type = INPUT_KEYBOARD;
+    inputs[0].ki.wVk = 0; // 가상 키 코드는 사용하지 않음
+    inputs[0].ki.dwFlags = KEYEVENTF_UNICODE; // 유니코드 문자열 사용
+    inputs[0].ki.wScan = text[0]; // 첫 번째 문자
+
+    // 키 업
+    inputs[1].type = INPUT_KEYBOARD;
+    inputs[1].ki.wVk = 0;
+    inputs[1].ki.dwFlags = KEYEVENTF_UNICODE | KEYEVENTF_KEYUP; // 키를 눌렀다가 떼기
+    inputs[1].ki.wScan = text[0];
+
+    // 입력 보내기
+    SendInput(2, inputs, sizeof(INPUT));
+}
+
+void SendArrowKeyInput(WORD arrowKeyCode) {
+    INPUT inputs[2];
+    memset(inputs, 0, sizeof(inputs));
+
+    // 키 다운
+    inputs[0].type = INPUT_KEYBOARD;
+    inputs[0].ki.wVk = arrowKeyCode; // 방향키의 가상 키 코드
+    inputs[0].ki.dwFlags = 0; // 키를 누름
+
+    // 키 업
+    inputs[1].type = INPUT_KEYBOARD;
+    inputs[1].ki.wVk = arrowKeyCode;
+    inputs[1].ki.dwFlags = KEYEVENTF_KEYUP; // 키를 떼기
+
+    // 입력 보내기
+    SendInput(2, inputs, sizeof(INPUT));
+}
+
+
+void SetFocusToWindowWithTitle(const wchar_t* windowTitle) {
+    Sleep(1000);
+    HWND windowHandle = FindWindowW(NULL, windowTitle);
+    if (windowHandle != NULL) {
+        // Bring the window to the foreground
+        ShowWindow(windowHandle, SW_SHOWNORMAL);
+        SetForegroundWindow(windowHandle);
+        SimulateTabKeyPress();
+        SimulateTabKeyPress();
+        SimulateTabKeyPress();
+        SimulateTabKeyPress();
+        SimulateTabKeyPress();
+        SendArrowKeyInput(VK_DOWN);
+        SimulateTabKeyPress();
+        SimulateTabKeyPress();
+        SimulateTabKeyPress();
+
+         // 입력할 텍스트
+        const char* textToType = "jasper002!";
+
+        // // 텍스트 입력
+        for (int i = 0; textToType[i] != '\0'; ++i) {
+            SendTextInput(&textToType[i]);
+            std::this_thread::sleep_for(std::chrono::milliseconds(50)); // 입력 간격
+        }
+        //  // 마지막으로 Enter 키 입력
+        // const char* enterKey = "\r";
+        // SendTextInput(enterKey);
+        
+        
+    } else {
+        std::wcout << L"Window with title \"" << windowTitle << L"\" not found." << std::endl;
+    }
+}
+
+
 
 bool authentication(){
-    //인증 요청
+    const wchar_t* windowTitle = L"인증서 선택";
+    // SetFocusToWindowWithTitle 함수를 비동기적으로 호출
+
+    //인증 요청  
+    std::thread focusThread([windowTitle]() {
+        SetFocusToWindowWithTitle(windowTitle);
+    });
     sReturn = LoginSecuMdle(userId,docNo);
+    focusThread.join();
+    LogToFile(sReturn);
+
     if (strstr(sReturn, authValue) != NULL) {
         // sReturn이 "C200 : 정상처리"와 같은 경우
         LogToFile("sReturn is equal to comparisonValue");
@@ -154,11 +255,12 @@ bool authentication(){
         // std::cout << "sReturn is not equal to comparisonValue" << std::endl;
         return false;
     }
+    
 }
 
 void unAuthentication(){
     //인증 해제
-    LogoutSecuMdle();
+    LogoutSecuMdle(); 
 }
 
 void init() {
